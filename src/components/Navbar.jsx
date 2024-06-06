@@ -27,12 +27,26 @@ const p = styled.div`
 
 const TextLink = styled.a`  
     text-decoration: none; 
+    color: black;
+`
+
+const TextLink1 = styled.a`  
+    text-decoration: none; 
+    color: white;
+`
+
+const TextLink2 = styled.a`  
+    text-decoration: none; 
+    color: white;
 `
 
 const Container = styled.div`
     height: 60px;
     padding: 10px 300px;
     background-color: #ffffff;
+`
+
+const Q = styled.div`
 `
 
 const Wrapper = styled.div`
@@ -473,9 +487,10 @@ cursor: pointer;
 `
 
 const End = styled.div`
-margin-top: 20px;
-margin-left: 1550px;
+margin-top: 19px;
+margin-left: 1450px;
 cursor: pointer;
+color: whitesmoke;
 `
 
 const Navbar = () => {
@@ -497,20 +512,20 @@ const Navbar = () => {
                     </Right>
                 </Wrapper>
                 <Bblock1>
-                    <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
-                    <Img1><img src={Phone}/></Img1>
+                        <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
+                        <Img1><img src={Phone}/></Img1>
                 </Bblock1>
                 <Cases>Чехлы</Cases>
                 <Bblock2>
                     <Cont_img1>
-                        <Img2><img src={case1}/></Img2>
-                        <Img3><img src={case2}/></Img3>
-                        <Img4><img src={case3}/></Img4>
+                        <TextLink href="/glass"><Img2><img src={case1}/></Img2></TextLink>
+                        <TextLink href="/silicone"><Img3><img src={case2}/></Img3></TextLink>
+                        <TextLink href="/leather"><Img4><img src={case3}/></Img4></TextLink>
                     </Cont_img1>
                     <Cont_img2>
-                        <Text2>Стеклянные</Text2>
-                        <Text3>Силиконовые</Text3>
-                        <Text4>Кожаные</Text4>
+                        <TextLink href="/glass"><Text2>Стеклянные</Text2></TextLink>
+                        <TextLink href="/silicone"><Text3>Силиконовые</Text3></TextLink>
+                        <TextLink href="/leather"><Text4>Кожаные</Text4></TextLink>
                     </Cont_img2>
                 </Bblock2>
                 <Pods>Наушники</Pods>
@@ -561,20 +576,22 @@ const Navbar = () => {
                 </Bblock5>
             </Container>
             <Container_2>
-                <CC>
-                    <Text14>QPICK</Text14>
-                    <Ul>
-                        <Li_1><li>Избранное</li></Li_1>
-                        <Li_2><TextLink href="/cart"><li>Корзина</li></TextLink></Li_2>
-                        <Li_3><li>Контакты</li></Li_3>
-                    </Ul>
-                    <Text15>Каз</Text15>
-                    <Text16>Рус</Text16>
-                    <Text17>Eng</Text17>
-                    <Img15><img src={Facebook}/></Img15>
-                    <Img16><img src={Telegram}/></Img16>
-                </CC>
-                <End>Copyright © 2024. Все права защищены.</End>
+                <Q>
+                    <CC>
+                        <TextLink1 href="/"><Text14 >QPICK</Text14></TextLink1>
+                        <Ul>
+                            <Li_1><TextLink1 href="/favourites"><li>Избранное</li></TextLink1></Li_1>
+                            <Li_2><TextLink1 href="/cart"><li>Корзина</li></TextLink1></Li_2>
+                            <Li_3><TextLink1 href="/contacts"><li>Контакты</li></TextLink1></Li_3>
+                        </Ul>
+                        <Text15>Каз</Text15>
+                        <Text16>Рус</Text16>
+                        <Text17>Eng</Text17>
+                        <Img15><TextLink1 href="https://www.rbc.ru/technology_and_media/21/03/2022/6238a5e89a79477e5dc0245f"><img src={Facebook}/></TextLink1></Img15>
+                        <Img16><TextLink1 href="https://telegram.org/"><img src={Telegram}/></TextLink1></Img16>
+                    </CC>
+                    <End><TextLink2 href="/copyright">Copyright © 2024. Все права защищены.</TextLink2></End>
+                </Q>
             </Container_2>
         </p>
     )
