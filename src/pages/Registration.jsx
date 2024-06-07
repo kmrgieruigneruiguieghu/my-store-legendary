@@ -27,7 +27,7 @@ const Div = styled.div`
 
 const Gmail = styled.h2`
   margin-right: 240px;
-  margin-top: 100px;
+  margin-top: 50px;
 `
 
 const SearchContainer = styled.div`
@@ -51,7 +51,7 @@ const Input = styled.input`
 
 const Passwordd = styled.h2`
   margin-right: 375px;
-  margin-top: 100px;
+  margin-top: 50px;
 `
 
 const Button = styled.button`
@@ -82,6 +82,11 @@ const TextLink = styled.a`
   color: white;
 `
 
+const Passwordd_right = styled.h2`
+  margin-right: 220px;
+  margin-top: 50px;
+`
+
 const Registration = () => {
   return (
     <div>
@@ -92,6 +97,8 @@ const Registration = () => {
               <Gmail>Электронная почта:</Gmail>
               <SearchContainer><Input placeholder = "qwerty@gmail.com"></Input></SearchContainer>
               <Passwordd>Пароль:</Passwordd>
+              <SearchContainer><Input></Input></SearchContainer>
+              <Passwordd_right>Подтвердите пароль:</Passwordd_right>
               <SearchContainer><Input></Input></SearchContainer>
               <TextLink href="/login"><Button>Подтвердить</Button></TextLink>
             </Div>

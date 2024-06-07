@@ -93,7 +93,7 @@ const Login = () => {
               <SearchContainer><Input placeholder = "qwerty@gmail.com"></Input></SearchContainer>
               <Passwordd>Пароль:</Passwordd>
               <SearchContainer><Input></Input></SearchContainer>
-              <TextLink href="/login"><Button>Войти</Button></TextLink>
+              <TextLink href="/"><Button>Войти</Button></TextLink>
             </Div>
         </Container>
     </div>

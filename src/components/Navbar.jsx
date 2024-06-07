@@ -487,10 +487,16 @@ cursor: pointer;
 `
 
 const End = styled.div`
-margin-top: 19px;
-margin-left: 1450px;
+display: flex;
+margin-top: 10px;
+margin-left: 850px;
 cursor: pointer;
-color: whitesmoke;
+color: #ffffff;
+`
+
+const Z = styled.div`
+margin-right: 200px;
+color: #ffffff;
 `
 
 const Navbar = () => {
@@ -590,7 +596,10 @@ const Navbar = () => {
                         <Img15><TextLink1 href="https://www.rbc.ru/technology_and_media/21/03/2022/6238a5e89a79477e5dc0245f"><img src={Facebook}/></TextLink1></Img15>
                         <Img16><TextLink1 href="https://telegram.org/"><img src={Telegram}/></TextLink1></Img16>
                     </CC>
-                    <End><TextLink2 href="/copyright">Copyright © 2024. Все права защищены.</TextLink2></End>
+                        <End>
+                            <Z>Copyright © 2024. Все права защищены.</Z>
+                            <TextLink2 href="/rights">Права конфиденциальности</TextLink2>
+                        </End>
                 </Q>
             </Container_2>
         </p>

@@ -9,6 +9,7 @@ import Copyright from "./pages/Copyright";
 import Glass from "./pages/Glass";
 import Silicone from "./pages/Silicone";
 import Leather from "./pages/Leather";
+import Rights from "./pages/Rights";
 import { 
   createBrowserRouter, 
   RouterProvider, 
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   { 
     path: "leather", 
     element: <Leather /> 
+  },
+  { 
+    path: "rights", 
+    element: <Rights /> 
   },
   ]) 
 
