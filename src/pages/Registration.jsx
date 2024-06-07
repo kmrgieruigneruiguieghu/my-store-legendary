@@ -93,7 +93,7 @@ const Registration = () => {
               <SearchContainer><Input placeholder = "qwerty@gmail.com"></Input></SearchContainer>
               <Passwordd>Пароль:</Passwordd>
               <SearchContainer><Input></Input></SearchContainer>
-              <TextLink href="/login"><Button>Подтвердить</Button></TextLink>
+              <TextLink href="/"><Button>Подтвердить</Button></TextLink>
             </Div>
         </Container>
     </div>
