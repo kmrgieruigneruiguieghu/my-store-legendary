@@ -4,6 +4,9 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import SearchIcon from '@mui/icons-material/Search';
 import { Badge } from '@mui/material';
 import { Home, ShoppingCartOutlined} from "@mui/icons-material";
+import olejka from '../pictures/telejka.jpg';
+import Facebook from "../pictures/Facebook.jpg";
+import Telegram from "../pictures/telegram.jpg";
 
 const p = styled.div`
 `
@@ -15,10 +18,7 @@ const TextLink = styled.a`
 
 const Container = styled.div`
     height: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 300px;
-    padding-right: 317px;
+    padding: 10px 300px;
     background-color: #ffffff;
 `
 
@@ -82,6 +82,57 @@ const MenuItem = styled.div`
     margin-right: 30px;
 `
 
+const Img0 = styled.div`
+    margin-left: 400px;
+    margin-top: 50px;
+`
+
+const Text = styled.div`
+  color: black;
+`
+
+const Text1 = styled.div`
+  color: black;
+`
+
+const Yrw = styled.h1`
+  margin-left: 500px;
+  margin-top: 15px;
+`
+
+const Wry = styled.div`
+  margin-left: 468px;
+`
+
+const TextLink0 = styled.a`
+  text-decoration: none; 
+  color: white;
+`
+
+const Button = styled.button`
+  text-decoration: none; 
+  color: white;
+  width: 100%;
+  max-width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 469px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #3b3b3b;
+  box-shadow: 0 3px 3px #8b8b8b;
+  cursor: pointer;
+  text-decoration: none;
+`
+
 const Cart = () => {
   return (
     <p>
@@ -100,6 +151,10 @@ const Cart = () => {
             <TextLink href="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></TextLink>
           </Right>
         </Wrapper>
+        <Img0><img src={olejka}/></Img0>
+        <Yrw><Text>Корзина пуста</Text></Yrw>
+        <Wry><Text1>Но это никогда не поздно исправить :)</Text1></Wry>
+        <TextLink0 href="/"><Button>В каталог товаров</Button></TextLink0>
       </Container>
     </p>
   );

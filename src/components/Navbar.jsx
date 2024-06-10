@@ -35,11 +35,6 @@ const TextLink1 = styled.a`
     color: white;
 `
 
-const TextLink2 = styled.a`  
-    text-decoration: none; 
-    color: white;
-`
-
 const Container = styled.div`
     height: 60px;
     padding: 10px 300px;
@@ -598,7 +593,7 @@ const Navbar = () => {
                     </CC>
                         <End>
                             <Z>Copyright © 2024. Все права защищены.</Z>
-                            <TextLink2 href="/rights">Права конфиденциальности</TextLink2>
+                            <TextLink1 href="/rights">Права конфиденциальности</TextLink1>
                         </End>
                 </Q>
             </Container_2>

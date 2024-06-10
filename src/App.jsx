@@ -5,7 +5,6 @@ import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import Contacts from "./pages/Contacts";
 import Favourites from "./pages/Favourites";
-import Copyright from "./pages/Copyright";
 import Glass from "./pages/Glass";
 import Silicone from "./pages/Silicone";
 import Leather from "./pages/Leather";
@@ -40,11 +39,7 @@ const router = createBrowserRouter([
   { 
     path: "favourites", 
     element: <Favourites /> 
-  },  
-  { 
-    path: "copyright", 
-    element: <Copyright /> 
-  },   
+  },    
   { 
     path: "glass", 
     element: <Glass /> 
