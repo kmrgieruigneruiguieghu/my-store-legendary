@@ -9,11 +9,14 @@ import Glass from "./pages/Glass";
 import Silicone from "./pages/Silicone";
 import Leather from "./pages/Leather";
 import Rights from "./pages/Rights";
+// import { ShoppingCard } from "./pages/shoppingcard";
+
 import { 
   createBrowserRouter, 
   RouterProvider, 
 } from "react-router-dom"; 
 import { Telegram } from "@mui/icons-material";
+import Oformlenie from "./pages/oformlenie";
 
 const router = createBrowserRouter([ 
   { 
@@ -55,6 +58,14 @@ const router = createBrowserRouter([
   { 
     path: "rights", 
     element: <Rights /> 
+  },
+  { 
+    path: "rights", 
+    element: <Rights /> 
+  },
+  { 
+    path: "oform", 
+    element: <Oformlenie /> 
   },
   ]) 
 
