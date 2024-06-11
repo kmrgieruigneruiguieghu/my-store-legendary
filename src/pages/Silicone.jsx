@@ -117,7 +117,7 @@ const Silicone = () => {
                 <H3>Характеристики:</H3>
                 <Text2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br/><br/>Commodi a fuga nulla quis cupiditate, ducimus minima corporis nobis quo<br/><br/>veritatis quaerat praesentium accusantium <br/><br/> similique molestiae dolor! <br/><br/>Assumenda quod saepe quo!</Text2>
                 <Ul>
-                  <TextLink1 href="/"><Button1>Купить 100₽</Button1></TextLink1>
+                  <TextLink1 href="/oform"><Button1>Купить 200₽</Button1></TextLink1>
                   <TextLink2 href="/cart"><Button2>Добавить в корзину</Button2></TextLink2>
                 </Ul>
               </ul>
