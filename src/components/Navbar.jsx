@@ -581,7 +581,7 @@ const Navbar = () => {
                     <CC>
                         <TextLink1 href="/"><Text14 >QPICK</Text14></TextLink1>
                         <Ul>
-                            <Li_1><TextLink1 href="/favourites"><li>Избранное</li></TextLink1></Li_1>
+                            <Li_1><TextLink1 href="/reklama"><li>Реклама</li></TextLink1></Li_1>
                             <Li_2><TextLink1 href="/cart"><li>Корзина</li></TextLink1></Li_2>
                             <Li_3><TextLink1 href="/contacts"><li>Контакты</li></TextLink1></Li_3>
                         </Ul>

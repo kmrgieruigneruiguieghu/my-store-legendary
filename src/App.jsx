@@ -4,11 +4,12 @@ import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import Contacts from "./pages/Contacts";
-import Favourites from "./pages/Favourites";
+import Reklama from "./pages/Reklama";
 import Glass from "./pages/Glass";
 import Silicone from "./pages/Silicone";
 import Leather from "./pages/Leather";
 import Rights from "./pages/Rights";
+import Accept from "./pages/Accept";
 // import { ShoppingCard } from "./pages/shoppingcard";
 
 import { 
@@ -40,8 +41,8 @@ const router = createBrowserRouter([
     element: <Contacts /> 
   },  
   { 
-    path: "favourites", 
-    element: <Favourites /> 
+    path: "reklama", 
+    element: <Reklama /> 
   },    
   { 
     path: "glass", 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
   { 
     path: "oform", 
     element: <Oformlenie /> 
+  },
+  { 
+    path: "accept", 
+    element: <Accept /> 
   },
   ]) 
 

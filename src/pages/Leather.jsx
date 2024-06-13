@@ -1,9 +1,128 @@
 import React from 'react';
+import styled from "styled-components";
+import Case33 from "../pictures/case33.png";
+
+const Container = styled.div`
+    height: 953px;
+    background-image: url("src/pictures/rectangle.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+`
+
+const TextLink = styled.a`
+  text-decoration: none; 
+  color: white;
+`
+
+const TextLink1 = styled.a`
+  text-decoration: none; 
+  color: white;
+  margin-left: 100px;
+`
+
+const TextLink2 = styled.a`
+  text-decoration: none; 
+  color: white;
+  margin-left: 150px;
+`
+
+const H2 = styled.h2`
+  margin-left: 1700px;
+  padding-top: 30px;
+`
+
+const H1 = styled.h2`
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+`
+
+const Div = styled.div`
+  padding: 1px 100px;
+  display: flex;
+`
+
+const Img1 = styled.div`
+`
+
+const H3 = styled.h2`
+margin-bottom: 20px;
+`
+
+const Text2 = styled.div`
+`
+
+const Button1 = styled.button`
+  text-decoration: none; 
+  color: white;
+  width: 100%;
+  max-width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #3b3b3b;
+  box-shadow: 0 3px 3px #8b8b8b;
+  cursor: pointer;
+  text-decoration: none;
+`
+
+const Button2 = styled.button`
+  text-decoration: none; 
+  color: white;
+  width: 100%;
+  max-width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f73a00;
+  box-shadow: 0 3px 3px #962a00;
+  cursor: pointer;
+  text-decoration: none;
+`
+
+const Ul = styled.div`
+display: flex;
+`
 
 const Leather = () => {
   return (
     <div>
-      <h2>Кожаные</h2>
+    <Container>
+        <TextLink href="/"><H2><h2>QPICK</h2></H2></TextLink>
+        <Div>
+          <Img1><img src={Case33} style={{width: 400, height: 700}}/></Img1>
+          <ul>
+            <H1><h2>Кожаный чехол для Iphone 13 Pro Max</h2></H1>
+            <H3>Характеристики:</H3>
+            <Text2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br/><br/>Commodi a fuga nulla quis cupiditate, ducimus minima corporis nobis quo<br/><br/>veritatis quaerat praesentium accusantium <br/><br/> similique molestiae dolor! <br/><br/>Assumenda quod saepe quo!</Text2>
+            <Ul>
+              <TextLink1 href="/oform"><Button1>Купить 200₽</Button1></TextLink1>
+              <TextLink2 href="/cart"><Button2>Добавить в корзину</Button2></TextLink2>
+            </Ul>
+          </ul>
+        </Div>
+    </Container>
     </div>
   );
 }

@@ -29,6 +29,11 @@ const H1 = styled.h3`
     margin-top: 80px;
 `
 
+const Text1 = styled.div`
+    margin-left: 40px;
+    margin-top: 80px;
+`
+
 const Contacts = () => {
   return (
     <div>
@@ -36,6 +41,9 @@ const Contacts = () => {
         <TextLink href="/"><H2><h2>QPICK</h2></H2></TextLink>
             <Div>
               <H1><h1>Контакты</h1></H1>
+              <Text1>Директор: +8 800 333 06 05</Text1>
+              <Text1>Админ: +8 800 555 35 35</Text1>
+              <Text1>Менеджер: +8 800 228 14 88</Text1>
             </Div>
       </Container>
     </div>
