@@ -107,6 +107,9 @@ const Wry = styled.div`
 const TextLink0 = styled.a`
   text-decoration: none; 
   color: white;
+  & :hover{
+      background-color: #f75b00;
+    }
 `
 
 const Button = styled.button`
@@ -131,6 +134,7 @@ const Button = styled.button`
   box-shadow: 0 3px 3px #8b8b8b;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
 `
 
 const Cart = () => {

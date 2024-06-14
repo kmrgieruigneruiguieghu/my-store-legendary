@@ -73,13 +73,21 @@ const Button = styled.button`
   text-transform: uppercase;
   color: #ffffff;
   background: #3b3b3b;
-  box-shadow: 0 3px 3px #8b8b8b;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
 `
 const TextLink = styled.a`
   text-decoration: none; 
   color: white;
+`
+
+const TextLink1 = styled.a`
+  text-decoration: none; 
+  color: white;
+  & :hover{
+      background-color: #f75b00;
+    }
 `
 
 const Passwordd_right = styled.h2`
@@ -100,7 +108,7 @@ const Registration = () => {
               <SearchContainer><Input></Input></SearchContainer>
               <Passwordd_right>Подтвердите пароль:</Passwordd_right>
               <SearchContainer><Input></Input></SearchContainer>
-              <TextLink href="/login"><Button>Подтвердить</Button></TextLink>
+              <TextLink1 href="/login"><Button>Подтвердить</Button></TextLink1>
             </Div>
         </Container>
     </div>

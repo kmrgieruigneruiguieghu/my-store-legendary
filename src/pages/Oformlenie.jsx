@@ -173,6 +173,14 @@ const TextLink = styled.a`
   color: white;
 `
 
+const TextLink1 = styled.a`
+  text-decoration: none; 
+  color: white;
+  & :hover{
+      background-color: #f75b00;
+    }
+`
+
 const Div5 = styled.div`
 display:flex;
 `
@@ -250,10 +258,10 @@ const Button = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background: #f73a00;
-  box-shadow: 0 3px 3px #962a00;
+  background: #c72e00;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
 `
 
 const Oformlenie = () => {
@@ -306,7 +314,7 @@ const Oformlenie = () => {
                         </Div8>
                         <H5><h3>Номер получателя</h3></H5>
                         <SearchContainer4><Input placeholder = "+7 ___ ___ __ __"></Input></SearchContainer4>
-                        <TextLink href="/accept"><Button>Закончить оформление</Button></TextLink>
+                        <TextLink1 href="/accept"><Button>Закончить оформление</Button></TextLink1>
                     </Ul>
                 </Div5>
             </Div>

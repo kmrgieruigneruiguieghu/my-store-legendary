@@ -73,13 +73,22 @@ const Button = styled.button`
   text-transform: uppercase;
   color: #ffffff;
   background: #3b3b3b;
-  box-shadow: 0 3px 3px #8b8b8b;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
+
 `
 const TextLink = styled.a`
   text-decoration: none; 
   color: white;
+`
+
+const TextLink1 = styled.a`
+  text-decoration: none; 
+  color: white;
+  & :hover{
+      background-color: #f75b00;
+    }
 `
 
 const Login = () => {
@@ -93,7 +102,7 @@ const Login = () => {
               <SearchContainer><Input placeholder = "qwerty@gmail.com"></Input></SearchContainer>
               <Passwordd>Пароль:</Passwordd>
               <SearchContainer><Input></Input></SearchContainer>
-              <TextLink href="/"><Button>Войти</Button></TextLink>
+              <TextLink1 href="/"><Button>Войти</Button></TextLink1>
             </Div>
         </Container>
     </div>

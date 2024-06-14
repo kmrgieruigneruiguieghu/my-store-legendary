@@ -19,12 +19,18 @@ const TextLink1 = styled.a`
   text-decoration: none; 
   color: white;
   margin-left: 100px;
+  & :hover{
+      background-color: #f75b00;
+    }
 `
 
 const TextLink2 = styled.a`
   text-decoration: none; 
   color: white;
   margin-left: 150px;
+  & :hover{
+      background-color: #f75b00;
+    }
 `
 
 const H2 = styled.h2`
@@ -72,9 +78,9 @@ const Button1 = styled.button`
   text-transform: uppercase;
   color: #ffffff;
   background: #3b3b3b;
-  box-shadow: 0 3px 3px #8b8b8b;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
 `
 
 const Button2 = styled.button`
@@ -95,10 +101,11 @@ const Button2 = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background: #f73a00;
-  box-shadow: 0 3px 3px #962a00;
+  background: #c72e00;
+  /* background: linear-gradient(to right, #ff8800 40%, #dacc15 70%); */
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s;
 `
 
 const Ul = styled.div`
